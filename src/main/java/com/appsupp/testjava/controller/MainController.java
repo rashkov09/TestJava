@@ -10,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
@@ -38,13 +37,13 @@ public class MainController {
         try {
             PersonInformationRequest personInformationRequest = new PersonInformationRequest(firstName, lastName, streetAddress, postalCode, city, country);
             if (personInformationValidationService.validate(personInformationRequest)) {
-                return ResponseEntity.status(HttpStatus.CREATED).body("Form submitted successfully!");
+                return ResponseEntity.status(HttpStatus.CREATED).body("<html><body><h2>Form submitted successfully!</h2><button onclick='window.location.href=\"/\"'>Continue</button></body></html>");
             } else {
                 return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Invalid form data");
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Internal Server Error");
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("<html><body><h2>Internal Server Error!</h2><button onclick='window.location.href=\"/\"'>Back to Home</button></body></html>");
         }
     }
 }
