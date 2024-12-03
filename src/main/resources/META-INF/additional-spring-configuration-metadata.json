@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "spring.web.resources.index",
+      "type": "java.lang.String",
+      "description": "Description for spring.web.resources.index."
+  }
+] }

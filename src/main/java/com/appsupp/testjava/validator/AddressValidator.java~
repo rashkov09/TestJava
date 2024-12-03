@@ -1,0 +1,12 @@
+package com.appsupp.testjava.validator;
+
+public class AddressValidator implements Validator {
+   private static final String ADDRESS_REG_EXPR =
+
+    @Override
+    public boolean isValid(String StringValue) {
+        return false;
+    }
+
+
+}
