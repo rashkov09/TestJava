@@ -2,12 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Success</title>
-
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
 </head>
 <body>
-<h1>Form submitted successfully!</h1>
-<p>Thank you.</p>
-<script th:src="@{/js/form.js}"></script>
+<span class="form-title">Use case: Here the user has the option to view his user agreement which is fetched from the server, but the user is not able to read it due to empty screen. Investigate why the agreement does not appear. </span>
+
+<h2>User Agreement</h2>
+<p>
+    By clicking the "I Agree" button below, you acknowledge that you have read and agree to the terms and conditions outlined in our user agreement document.
+</p>
+<p>
+    Please click the button below to fetch and read the user agreement document.
+</p>
+<a href="http://localhost:8000/user-agreement-document">View User Agreement Document</a>
+
 </body>
 </html>

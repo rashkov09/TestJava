@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-public class MainController {
+public class FormController {
     private final PersonInformationValidationService personInformationValidationService;
 
     @Autowired
-    public MainController(PersonInformationValidationService personInformationValidationService) {
+    public FormController(PersonInformationValidationService personInformationValidationService) {
         this.personInformationValidationService = personInformationValidationService;
     }
 
@@ -37,7 +37,8 @@ public class MainController {
         try {
             PersonInformationRequest personInformationRequest = new PersonInformationRequest(firstName, lastName, streetAddress, postalCode, city, country);
             if (personInformationValidationService.validate(personInformationRequest)) {
-                return ResponseEntity.status(HttpStatus.CREATED).body("<html><body><h2>Form submitted successfully!</h2><button onclick='window.location.href=\"/\"'>Continue</button></body></html>");
+                return ResponseEntity.status(HttpStatus.CREATED).body("<html><body><h2>Form submitted successfully!</h2><button onclick='window.location.href=\"success.html\"'>Continue</button></body></html>"
+                );
             } else {
                 return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Invalid form data");
             }
