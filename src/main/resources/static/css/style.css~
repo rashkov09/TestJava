@@ -8,11 +8,10 @@ form {
     text-align: center;
 }
 
-.form-title {
-    display: block;
-    text-align: center;
+span {
     font-size: larger;
     font-weight: bold;
+    position: absolute;
 }
 
 button {

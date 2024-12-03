@@ -10,7 +10,7 @@
 <main>
     <div class="wrapper">
         <div class="header">
-        <span class="form-title">Use case:
+        <span>Use case:
             Client is trying to create an account and is experiencing an issue. What can be advised in order for the client to proceed with the registration given the form below? </span>
         </div>
         <form th:action="@{/}" th:method="post">
