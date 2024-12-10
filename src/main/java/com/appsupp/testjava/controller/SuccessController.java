@@ -14,9 +14,14 @@ public class SuccessController {
     }
 
 
-    @GetMapping("/success.html")
+    @GetMapping("/second-assignment.html")
     public String getIndex(Model model) {
         pdfServer.startServer();
-        return "success";
+        return "second-assignment";
     }
+    @GetMapping("/finish.html")
+    public String getFinish(Model model) {
+        return "finish";
+    }
+
 }

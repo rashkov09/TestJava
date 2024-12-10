@@ -46,7 +46,7 @@ public class FormController {
         try {
             PersonInformationRequest personInformationRequest = new PersonInformationRequest(firstName, lastName, streetAddress, postalCode, city, country);
             if (personInformationValidationService.validate(personInformationRequest)) {
-                return new ModelAndView("success", HttpStatus.OK);
+                return new ModelAndView("second-assignment", HttpStatus.OK);
             } else {
                 return new ModelAndView("error", HttpStatus.INTERNAL_SERVER_ERROR);
             }

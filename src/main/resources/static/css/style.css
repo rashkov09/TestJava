@@ -8,11 +8,19 @@ form {
     text-align: center;
 }
 
+.header{
+    border: 1px solid dodgerblue;
+    background-color: aqua;
+    padding: 10px;
+
+}
+
+
 .form-title {
+    align-self: start;
     display: block;
-    text-align: center;
+    text-align: left;
     font-size: larger;
-    font-weight: bold;
 }
 
 button {

@@ -10,8 +10,15 @@
 <main>
     <div class="wrapper">
         <div class="header">
-        <span class="form-title">Use case:
-            Client is trying to create an account and is experiencing an issue. What can be advised in order for the client to proceed with the registration given the form below? </span>
+        <span class="form-title">
+            <h2> Exercise 1: Account Registration Troubleshooting </h2> <br>
+            <strong>**Objective:**</strong> Investigate and resolve registration process issues
+            <br>
+            <br>
+Once you verified that the "Form submitted successfully" screen appears, click "Continue" to
+proceed to the next step.
+
+        </span>
         </div>
         <form th:action="@{/}" th:method="post">
             <div>
@@ -290,9 +297,9 @@
                     <option value="ZW">Zimbabwe</option>
                 </select>
             </div>
-            <button onclick="alert('Form submitted successfully!')">Save address</button>
+            <button>Save address</button>
         </form>
-    </div>
+        </div>
 </main>
 </body>
 </html>

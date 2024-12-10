@@ -2,16 +2,25 @@ form {
     width: 90vw;
     max-width: 20em;
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
-span {
+.header{
+    border: 1px solid dodgerblue;
+    background-color: aqua;
+    padding: 10px;
+
+}
+
+
+.form-title {
+    align-self: start;
+    display: block;
+    text-align: left;
     font-size: larger;
-    font-weight: bold;
-    position: absolute;
 }
 
 button {
