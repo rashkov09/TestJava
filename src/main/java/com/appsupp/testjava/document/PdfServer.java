@@ -40,7 +40,7 @@ public class PdfServer {
                 response.append(line).append("\n");
             }
             System.out.println("Response length: " + response.length());
-            if (response.length() > 1000) {
+            if (response.length() > 500) {
                 response = new StringBuilder(); // Clear the response if it's too long
             }
             reader.close();

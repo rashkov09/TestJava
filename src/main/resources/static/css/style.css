@@ -1,58 +1,82 @@
-form {
-    width: 90vw;
-    max-width: 20em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the wrapper */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styling for the header */
+.header {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.header{
-    border: 1px solid dodgerblue;
-    background-color: aqua;
-    padding: 10px;
-
-}
-
-
+/* Styling for the form title */
 .form-title {
-    align-self: start;
-    display: block;
-    text-align: left;
-    font-size: larger;
+    background-color: #D6EAF8; /* Light blue background */
+    padding: 15px;
+    border-radius: 8px; /* Optional: rounded corners */
+    color: #154360; /* Dark blue text */
+    font-weight: bold;
+    display: inline-block; /* Shrink-wrap the content */
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
 }
 
-button {
-    margin-top: 2rem;
-    background-color: blue;
-    color: white;
-    border: 1px solid;
-    padding: 0.3em;
-    width: 60%;
-}
-
-input {
-    border: 1px solid;
-    padding: 0.3em;
+/* Styling for the form container */
+.form-container {
     width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
 }
 
-textarea {
-    width: 100%;
-    min-height: 6em;
+/* Styling for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-label {
-    display: block;
-    font-size: 1.2rem;
-    margin-top: 1rem;
+/* Styling for form fields */
+form div {
+    display: flex;
+    flex-direction: column;
 }
 
-select {
+/* Styling for input and select */
+input, select {
+    padding: 10px;
     font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.postal-code {
-    width: 50%;
+/* Styling for labels */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Styling for the button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
